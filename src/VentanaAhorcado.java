@@ -63,6 +63,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
         jButton26 = new javax.swing.JButton();
         jButton27 = new javax.swing.JButton();
         jInternalFrame1 = new javax.swing.JInternalFrame();
+        jButton28 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 0));
@@ -375,6 +376,9 @@ public class VentanaAhorcado extends javax.swing.JFrame {
 
         getContentPane().add(jInternalFrame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 0, 680, 34));
 
+        jButton28.setText("Reiniciar");
+        getContentPane().add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 610, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -582,6 +586,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton26;
     private javax.swing.JButton jButton27;
+    private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
