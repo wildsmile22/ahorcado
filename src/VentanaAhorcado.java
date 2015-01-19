@@ -37,6 +37,14 @@ public class VentanaAhorcado extends javax.swing.JFrame {
         
         if(palabraOculta.contains(letra)){//la letra esta en la palabra oculta
         //desocultar la letra en la pantalla
+            for(int i=0; i<palabraOculta.length();i++){
+                if(palabraOculta.charAt(i) == letra.charAt(0)){
+                //si hemos llegado hasta aqui es porque la letra esta en la palabraOculta
+                    //palabraConGuiones[2*i] = letra;
+                    palabraConGuiones = palabraConGuiones.substring(0, 2*i) + letra + palabraConGuiones.substring(2*i, +1);
+                }
+            }
+            jLabel1.setText(palabraConGuiones);
         //quitar el guion bajo
         }else{//la letra NO esta en la palabra oculta
         numeroFallos++;
@@ -410,7 +418,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3MousePressed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+       
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton4MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MousePressed
@@ -422,7 +430,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton5MousePressed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+    
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MousePressed
@@ -438,7 +446,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton8MousePressed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+      
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton9MousePressed
@@ -454,7 +462,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton11MousePressed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+    
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton12MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton12MousePressed
@@ -466,7 +474,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13MousePressed
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+       
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton14MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton14MousePressed
@@ -514,7 +522,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton22MousePressed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+     
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton23MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MousePressed
@@ -534,7 +542,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton26MousePressed
 
     private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+     
     }//GEN-LAST:event_jButton26ActionPerformed
 
     private void jButton27MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MousePressed
@@ -542,7 +550,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton27MousePressed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-       chequeaBoton((JButton)evt.getSource());
+      
     }//GEN-LAST:event_jButton6ActionPerformed
 
     /**
