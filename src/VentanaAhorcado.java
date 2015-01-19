@@ -41,7 +41,7 @@ public class VentanaAhorcado extends javax.swing.JFrame {
                 if(palabraOculta.charAt(i) == letra.charAt(0)){
                 //si hemos llegado hasta aqui es porque la letra esta en la palabraOculta
                     //palabraConGuiones[2*i] = letra;
-                    palabraConGuiones = palabraConGuiones.substring(0, 2*i) + letra + palabraConGuiones.substring(2*i, +1);
+                    palabraConGuiones = palabraConGuiones.substring(0, 2*i) + letra + palabraConGuiones.substring(2*i +1);
                 }
             }
             jLabel1.setText(palabraConGuiones);
